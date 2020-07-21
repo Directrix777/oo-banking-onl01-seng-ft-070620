@@ -18,6 +18,7 @@ class Transfer
     if self.valid? && !@sender.balance < amount
       @reciever.deposit(@amount)
       @sender.balance = @sender.balance - amount
+    end
   end
 
 end
